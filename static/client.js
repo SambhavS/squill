@@ -45,13 +45,13 @@ function update_info(){
 	 	document.getElementById("red_info").innerHTML = '<b style="color:red;">Red</b> Player: '+col_info["red"];		
 	}
 	else{
-	 	document.getElementById("red_info").innerHTML = '';
+	 	document.getElementById("red_info").innerHTML = '-';
 	}
 	if(col_info["blue"] != null){
 	 	document.getElementById("blue_info").innerHTML = '<b style="color:blue;">Blue</b> Player: '+col_info["blue"];	
 	}
 	else{
-	 	document.getElementById("blue_info").innerHTML = '';
+	 	document.getElementById("blue_info").innerHTML = '-';
 	}
 	if(col_info["red"] != null && col_info["blue"] != null){
 	 	$("#submission").show();

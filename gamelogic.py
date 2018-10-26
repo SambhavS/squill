@@ -130,7 +130,7 @@ def core_game(red_code, blue_code, state=None):
 			if state != None:
 				state.append(copy_3D(col_mat))
 			counter += 1
-			print(counter)
+			#print(counter)
 			#clock.tick(500)
 
 	main()
