@@ -37,7 +37,7 @@ def upload(num):
         return "Too many users: code was not submitted"
     file_states[num][username] = code_text
     if username not in [uname for color, uname in user_col_states[num]]:
-        color = index_to_col[len(file_states[num]) - 1]
+        color = "blue" if any(["red" in tup for tup in user_col_states[num]]) else "red"
         user_col_states[num].append((color, username))
     return json.dumps(user_col_states[num])
 
