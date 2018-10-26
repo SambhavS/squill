@@ -1,5 +1,6 @@
 // Setup
-var idNum = 100
+var url_string = window.location.href;
+var idNum = parseInt(url_string.split('/').slice(-1)[0]);
 var myname = prompt("Name? ");
 var color_dict = {"white":"#FFFFFF", "blue":"#0000FF", "red":"#FF0000"}
 col_info = {"red": null, "blue": null}
@@ -62,7 +63,7 @@ function update_info(){
 	
 // Interval methods
 setInterval(draw_boards, 500)
-setInterval(update_info, 5000)
+setInterval(update_info, 120)
 //** Onclick methods **
 
 //Upload
