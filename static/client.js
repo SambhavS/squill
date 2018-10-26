@@ -63,7 +63,7 @@ function update_info(){
 	
 // Interval methods
 setInterval(draw_boards, 500)
-setInterval(update_info, 120)
+setInterval(update_info, 400)
 //** Onclick methods **
 
 //Upload
