@@ -43,7 +43,6 @@ def upload(num):
 
 @app.route("/info/<num>")
 def info(num):
-    print(user_col_states)
     if num in user_col_states:
         return json.dumps(user_col_states[num])
     return json.dumps([])

@@ -41,24 +41,24 @@ function update_info(){
  		JSON.parse(data).forEach(tup => {
  			col_info[tup[0]] = tup[1];
  		});
+		if(col_info["red"] != null){
+	 		document.getElementById("red_info").innerHTML = '<b style="color:red;">Red</b> Player: '+col_info["red"];		
+		}
+		else{
+		 	document.getElementById("red_info").innerHTML = '-';
+		}
+		if(col_info["blue"] != null){
+		 	document.getElementById("blue_info").innerHTML = '<b style="color:blue;">Blue</b> Player: '+col_info["blue"];	
+		}
+		else{
+		 	document.getElementById("blue_info").innerHTML = '-';
+		}
+		if(col_info["red"] != null && col_info["blue"] != null){
+		 	$("#submission").show();
+		}else{
+			$("#submission").hide();	
+		}
 	});
-	if(col_info["red"] != null){
-	 	document.getElementById("red_info").innerHTML = '<b style="color:red;">Red</b> Player: '+col_info["red"];		
-	}
-	else{
-	 	document.getElementById("red_info").innerHTML = '-';
-	}
-	if(col_info["blue"] != null){
-	 	document.getElementById("blue_info").innerHTML = '<b style="color:blue;">Blue</b> Player: '+col_info["blue"];	
-	}
-	else{
-	 	document.getElementById("blue_info").innerHTML = '-';
-	}
-	if(col_info["red"] != null && col_info["blue"] != null){
-	 	$("#submission").show();
-	}else{
-		$("#submission").hide();	
-	}
 }
 	
 // Interval methods
@@ -90,7 +90,7 @@ $("#run_code").click(() => {
 // Reset
 $("#resetButton").click(() =>{
 	$.get("/reset/"+idNum.toString(), msg => {
-	console.log(msg);
+		console.log(msg);
+		location.reload();
 	});
-	location.reload();
 })
