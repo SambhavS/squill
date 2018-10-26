@@ -38,6 +38,8 @@ function update_info(){
 	$.get("/info/"+idNum.toString(), data => {
 		col_info["red"] = null;
 		col_info["blue"] = null;
+		console.log("-");
+		console.log(data);
  		JSON.parse(data).forEach(tup => {
  			col_info[tup[0]] = tup[1];
  		});
