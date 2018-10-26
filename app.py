@@ -22,10 +22,6 @@ def reset(num):
 def online(num):
     return render_template("test.html")
 
-@app.route("/docs/<num>")
-def docs(num):
-    return render_template("docs.html")
-
 @app.route("/upload/<num>", methods=['POST'])
 def upload(num):   
     if num not in file_states:
