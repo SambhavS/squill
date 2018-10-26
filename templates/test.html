@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+	<body>
+		
+		<div class="container">
+		<br>
+		<h2>Welcome to Squill!</h2>	
+		<p>Squill is a game where you write a program to control troops and battle your friend! Check out the docs <a target="_blank" rel="noopener noreferrer" href="https://github.com/SambhavS/squill/blob/master/README.md#docs">here</a>.</p>
+		<p id="red_info"></p>
+		<p id="blue_info"></p>
+
+		<div id="prerun">
+
+
+		<input type="file" id="fileToLoad">
+		<button id="upload" class="btn btn-outline-primary">Upload</button>
+	    <br><br>
+		<p id="submission"><button id="run_code" class="btn btn-success">Battle!</button> </p>
+		</div>
+			
+
+		<div id="results">
+		<canvas id="myCanvas" width="500" height="500" style="border:1px solid #c3c3c3;"> 
+		</canvas>
+		<p>Frame: <input id="frameNum" type="number" value="1"></p>
+		</div>
+		<p><button id="resetButton"  class="btn btn-dark">Reset</button> </p>
+
+		<script type="text/javascript" src="../static/client.js"></script>
+		</div>
+	</body>
+</html>
