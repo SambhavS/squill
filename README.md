@@ -26,8 +26,4 @@ Here is a very simple example of a valid file.
 
 All that should be in your file should be your function definition (and comments if desired).
 
-
 Save your JS file and upload it when needed. When both you and your opponent have uploaded your files, you can hit 'Battle!' which will show you your results.
-
-## An Important Note
-**There are also some more rules, but I haven't gotten around to writing them.**
