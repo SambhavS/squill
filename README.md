@@ -2,8 +2,6 @@
 
 Squill is a game where you write a program to control troops and battle your friend! 
 
-Status: Works locally and looks less ugly than it did before but still lots of work to do before actually playable....
-
 ## Docs
 
 You will code a JavaScript strategy file with one function called 'turn'. It will have the following signature: 
